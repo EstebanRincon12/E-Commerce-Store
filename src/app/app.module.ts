@@ -35,6 +35,7 @@ import { StoreService } from './services/store.service';
 import { LoginComponent } from './components/login/login.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { CreateAccountComponent } from './components/create-account/create-account.component';
+import { ChangePasswordComponent } from './components/change-password/change-password.component';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { CreateAccountComponent } from './components/create-account/create-accou
     CartComponent,
     LoginComponent,
     CreateAccountComponent,
+    ChangePasswordComponent,
   ],
   imports: [
     FormsModule ,
