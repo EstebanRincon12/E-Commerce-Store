@@ -1,23 +1,19 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { ContentResponse } from '../models/content-response';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CreateUserService {
 
-  private endPointCreate = "create_user";
+  private apiUrl = " https://localhost:5000";
+ 
 
   constructor(private http: HttpClient) { }
 
-
-  login = data['login']
-    rol_name =  data['rol_name']
-    id_person = data['id_person']
-    password = data['password']
-
-  public createUser(id_persona: number, login: string, rol_name: string, description: string, password: string) {
-    return this.http.post<ContentResponseMessage>(`${environment.apiUrl}/${this.url}/${this.endPointCreate}`,
-      { id_persona, login, rol_name, description, password });
+  createUser(user: any): Observable<any> {
+    return this.http.post<any>(`${this.apiUrl}/create_user`, user);
   }
 }

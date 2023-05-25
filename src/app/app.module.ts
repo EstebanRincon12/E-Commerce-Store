@@ -8,6 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -38,6 +39,7 @@ import { CreateAccountComponent } from './components/create-account/create-accou
 
 @NgModule({
   declarations: [
+    
     AppComponent,
     HomeComponent,
     ProductsHeaderComponent,
@@ -49,6 +51,7 @@ import { CreateAccountComponent } from './components/create-account/create-accou
     CreateAccountComponent,
   ],
   imports: [
+    FormsModule ,
     MatCheckboxModule,
     MatInputModule,
     MatFormFieldModule,

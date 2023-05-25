@@ -7,7 +7,7 @@
       <div class="mt-4">
         <mat-form-field class="w-full">
           <mat-label>Username</mat-label>
-          <input matInput placeholder="Username">
+          <input matInput placeholder="Username" [(ngModel)]="login">
         </mat-form-field>
       </div>
       <div class="mt-1">
@@ -25,7 +25,7 @@
           <a href="#" class="text-info font-semibold italic text-sm">Forgot your password?</a>
         </div>
       </div>
-      <button mat-raised-button color="info" class="w-full mt-4 font-semibold shadow-sm">Login</button>
+      <button mat-raised-button color="info" class="w-full mt-4 font-semibold shadow-sm" (click)="getToken()">Login</button>
       <div class="flex justify-center mt-1">
         <div>Don't have an account?</div>
         <a href="/createAccount" class="text-info font-semibold">Registrarse</a>
