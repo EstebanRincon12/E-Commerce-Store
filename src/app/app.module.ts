@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
 
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
@@ -28,6 +31,10 @@ import { CartComponent } from './pages/cart/cart.component';
 import { CartService } from './services/cart.service';
 import { HttpClientModule } from '@angular/common/http';
 import { StoreService } from './services/store.service';
+import { LoginComponent } from './components/login/login.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { CreateAccountComponent } from './components/create-account/create-account.component';
+
 
 @NgModule({
   declarations: [
@@ -38,8 +45,13 @@ import { StoreService } from './services/store.service';
     FiltersComponent,
     HeaderComponent,
     CartComponent,
+    LoginComponent,
+    CreateAccountComponent,
   ],
   imports: [
+    MatCheckboxModule,
+    MatInputModule,
+    MatFormFieldModule,
     BrowserModule,
     AppRoutingModule,
     MatSidenavModule,

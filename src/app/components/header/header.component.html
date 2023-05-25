@@ -1,5 +1,5 @@
 <mat-toolbar class="justify-between max-w-7xl mx-auto border-x">
-  <a routerLink="home">Code with Sloba store</a>
+  <a routerLink="home">Ecommerce</a>
   <button mat-icon-button [matMenuTriggerFor]="menu">
     <mat-icon
       [matBadge]="itemsQuantity"
@@ -12,7 +12,7 @@
     <div class="p-3 divide-y divide-solid">
       <div class="pb-3 flex justify-between">
         <span class="mr-16">{{ cart.items.length }} items</span>
-        <a routerLink="cart">View Cart</a>
+        <a routerLink="cart">Ver carrito</a>
       </div>
       <div *ngIf="cart.items.length" class="py-3">
         <div
